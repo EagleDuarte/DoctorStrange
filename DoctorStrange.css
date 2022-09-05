@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+html,
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #000, #000D 35%, #0000),
+        url(/img/doctor-strange-in-the-multiverse-of-madness.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px 50px 128px;
+    animation: zoom 1.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+}
+
+.conteudo-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.conteudo-container h1 {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.conteudo-container h1 span {
+    font-size: 3rem;
+    font-weight: 200;
+    transform: translateY(20px)
+}
+
+.tituloFilme {
+    font-size: 3rem;
+    font-style: italic;
+    color: #E62721;
+    transform: translateY(-10px)
+}
+
+.logoMarvel {
+    width: 120px;
+}
+
+.escudo{
+    height: 350px;
+    width: 350px;
+    animation: DivEscudo 5s infinite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+@keyframes DivEscudo{
+    0% { 
+        bottom: -180px;
+        font-size: 30px;
+        transform: rotate(0deg);
+    }
+    100% {
+        right: -180px;
+        font-size: 30px;
+        transform: rotate(95deg);
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 30px 30px 25px 30px;
+        background-image: url(/img/doctor-strange-in-the-multiverse-of-madness.jpg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
